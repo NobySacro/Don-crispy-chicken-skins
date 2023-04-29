@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo img{
+    height: 6rem;
+    border-radius: 200%;
+}
+
+.navbar{
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 12vh;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navlist{
+    display: flex;
+    gap: 2.5rem;
+}
+
+.navlist li{
+    list-style: none;
+}
+
+.navlist a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: .08rem;
+}
+.hero{
+    display: flex;
+}
+
+.hero .left{
+    background-color: burlywood;
+    padding-left: 3rem;
+}
+
+.hero .right{
+    background-color: grey;
+    justify-content: center;
+    background-image: url(food.png);
+    padding: 0%;
+   
+}
+
+.hero .hero_split{
+    width: 50%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.navlist .slider{
+    background-color: rgba(255, 255, 255, 0.345);
+    width: 6rem;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    right: 430px;
+    border-top: .3rem solid burlywood;
+    border-radius: 0 0 2rem 2rem;
+    backdrop-filter: blur(.5rem);
+    z-index: -1;
+}
+
+.navlist li:nth-child(2):hover ~ .slider{
+    right: 335px;
+
+}
+.navlist li:nth-child(3):hover ~ .slider{
+    right: 225px;
+}
+
+.navlist li:nth-child(4):hover ~ .slider{
+    right: 335px;
+}
+
+.navlist li:nth-child(5):hover ~ .slider{
+    right: 335px;
+}
+
+.left .content{
+    color: black;
+}
+
+.content h1{
+    font-size: 5rem;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke: .04rem black;
+    letter-spacing: .2rem;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.content p{
+    color: black;
+    font-size: 1.2rem;
+    width: 75%;
+    margin: 1.5rem 0;
+    line-height: 2rem;
+    font-family: cursive;
+}
+
+.content button{
+    background: radial-gradient(at top left red
+    , blue, green);
+    padding: 1rem 3rem;
+    border: .2rem solid rgba(255, 255, 255, 0.286);
+    font-size: 1.3rem;
+    color: black;
+    border-radius: 4rem;
+    letter-spacing: .02rem;
+}
+
+.content button:hover{
+    background: radial-gradient(at bottom right, black, grey, white);
+
+}
+
+
